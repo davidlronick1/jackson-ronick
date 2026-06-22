@@ -53,10 +53,12 @@ figure img{max-width:100%;height:auto;border:1px solid var(--line);border-radius
   box-shadow:0 2px 10px rgba(0,0,0,.06)}
 figcaption{font-family:-apple-system,Helvetica,Arial,sans-serif;font-size:.85rem;color:var(--muted);margin-top:10px;line-height:1.5}
 figcaption b{color:var(--garnet)}
-figure.single{max-width:660px}
-.chartgrid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start;margin:26px 0}
+figure.single{max-width:440px}
+figure.single img{max-height:300px;width:auto}
+.chartgrid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start;margin:26px 0;max-width:720px;margin-left:auto;margin-right:auto}
 .chartgrid figure{margin:0}
-@media(max-width:680px){.chartgrid{grid-template-columns:1fr}}
+.chartgrid figure img{height:215px;width:auto;max-width:100%}
+@media(max-width:680px){.chartgrid{grid-template-columns:1fr}.chartgrid figure img{height:auto;width:100%}}
 
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
 @media(max-width:640px){.grid2{grid-template-columns:1fr}}
